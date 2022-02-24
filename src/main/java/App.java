@@ -5,6 +5,12 @@ public class App {
         System.out.println("Hello world !");
 
         System.out.println("Hello team!");
+
+        System.out.println("guten morgen");
+
+        System.out.println("Hi ");
+
+        System.out.println("hi there!");
     }
 
 
