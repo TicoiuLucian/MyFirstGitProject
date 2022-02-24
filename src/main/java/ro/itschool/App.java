@@ -1,3 +1,5 @@
+package ro.itschool;
+
 import org.w3c.dom.ls.LSOutput;
 
 public class App {
