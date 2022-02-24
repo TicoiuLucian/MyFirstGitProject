@@ -9,6 +9,8 @@ public class App {
         System.out.println("guten morgen");
 
         System.out.println("Hi ");
+
+        System.out.println("hi there!");
     }
 
 
