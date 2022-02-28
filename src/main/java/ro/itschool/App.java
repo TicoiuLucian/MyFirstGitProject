@@ -1,6 +1,7 @@
 package ro.itschool;
 
-import org.w3c.dom.ls.LSOutput;
+import ro.itschool.dao.KangarooDAO;
+import ro.itschool.entity.Kangaroo;
 
 public class App {
     public static void main(String[] args) {
@@ -13,7 +14,27 @@ public class App {
         System.out.println("Hi ");
 
         System.out.println("hi there!");
+
+
+//    ~~~~~~~~~~~~~~~KANGAROO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+        KangarooDAO kangarooDAO = new KangarooDAO();
+        Kangaroo kangaroo = new Kangaroo();
+
+//        kangarooDAO.saveKangaroos(kangaroo);
+
+//        kangarooDAO.getKangarooById(3);
+
+//        kangarooDAO.getAllKangaroos();
+
+//        kangarooDAO.updateKangaroosById(5);
+
+//        kangarooDAO.deleteKangarooById(7);
+
+//        kangarooDAO.deleteAllKangaroos();
+
+//      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
     }
-
-
 }
