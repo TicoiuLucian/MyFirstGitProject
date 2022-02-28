@@ -21,7 +21,7 @@
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
 
 
-
+        <mapping class="ro.itschool.entity.Armadillo"/>
 
 
     </session-factory>

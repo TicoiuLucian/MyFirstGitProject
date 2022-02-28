@@ -1,18 +1,43 @@
 package ro.itschool;
 
-import org.w3c.dom.ls.LSOutput;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import ro.itschool.entity.Armadillo;
+import ro.itschool.utils.HibernateUtils;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello world !");
+        SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
+        Session session;
+        Transaction transaction;
+        session = sessionFactory.openSession();
+        transaction = session.beginTransaction();
 
-        System.out.println("Hello team!");
+        Armadillo armadillo = new Armadillo();
+        armadillo.setName("Marcel");
+        System.out.println("Armadillo " + armadillo.getName() + " was saved to DB");
+        session.save(armadillo);
 
-        System.out.println("guten morgen");
+        armadillo.setAge((short) 2);
 
-        System.out.println("Hi ");
+        Armadillo armadillo2 = new Armadillo();
+        armadillo2.setName("Roy");
+        System.out.println("The new Armadillo, " + armadillo2.getName() + ", was saved to DB");
+        session.save(armadillo2);
 
-        System.out.println("hi there!");
+        armadillo2.setAge((short) 6);
+
+        transaction.commit();
+        session.close();
+
+
+
+
+
+
+
+
     }
 
 
