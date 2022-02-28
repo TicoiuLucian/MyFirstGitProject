@@ -20,7 +20,7 @@ import javax.persistence.*;
         private Long id;
 
         @Column(name = ("name_of_armadillo"))
-        private String name;
+        public String name;
 
         @Column(name = ("age_of_armadillo"))
         private short age;
