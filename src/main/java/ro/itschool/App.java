@@ -23,7 +23,7 @@ public class App {
 
         Armadillo armadillo2 = new Armadillo();
         armadillo2.setName("Roy");
-        System.out.println("Armadillo " + armadillo2.getName() + " was saved to DB");
+        System.out.println("The new Armadillo, " + armadillo2.getName() + ", was saved to DB");
         session.save(armadillo2);
 
         armadillo2.setAge((short) 6);
