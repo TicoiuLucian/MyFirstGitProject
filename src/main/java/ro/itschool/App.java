@@ -1,18 +1,25 @@
 package ro.itschool;
 
-import org.w3c.dom.ls.LSOutput;
+import ro.itschool.dao.ChimpanzeeDAO;
+import ro.itschool.entity.Chimpanzee;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello world !");
 
-        System.out.println("Hello team!");
+        ChimpanzeeDAO chimpanzeeDAO = new ChimpanzeeDAO();
 
-        System.out.println("guten morgen");
+        Chimpanzee chimpanzee = new Chimpanzee("Chimpi", 13, (byte) 7);
+        Chimpanzee chimpanzee2 = new Chimpanzee("ChimpanZeus", 15, (byte) 5);
 
-        System.out.println("Hi ");
+        chimpanzeeDAO.saveChimpanzee(chimpanzee);
+        chimpanzeeDAO.saveChimpanzee(chimpanzee2);
 
-        System.out.println("hi there!");
+        chimpanzeeDAO.getAllChimpanzees();
+        chimpanzeeDAO.deleteChimpanzee(chimpanzee2);
+
+        chimpanzeeDAO.getAllChimpanzees();
+
+        chimpanzeeDAO.updateChimpanzee(1);
     }
 
 
