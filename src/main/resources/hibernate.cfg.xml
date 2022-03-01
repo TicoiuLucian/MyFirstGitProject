@@ -21,8 +21,8 @@
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
 
 
-
-
+        <mapping class="ro.itschool.entity.Elephant"/>
+        <mapping class="ro.itschool.dao.ElephantDAO"/>
 
     </session-factory>
 </hibernate-configuration>
